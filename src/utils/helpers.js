@@ -1,12 +1,12 @@
 export function formatCurrency(value) {
-  return new Intl.NumberFormat('en', {
+  return new Intl.NumberFormat('en-IN', {
     style: 'currency',
-    currency: 'EUR',
+    currency: 'INR',
   }).format(value);
 }
 
 export function formatDate(dateStr) {
-  return new Intl.DateTimeFormat('en', {
+  return new Intl.DateTimeFormat('en-IN', {
     day: 'numeric',
     month: 'short',
     hour: '2-digit',
